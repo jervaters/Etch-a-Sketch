@@ -8,10 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <span class="container-one container">
-        <div class="container-div container game">
-            
-        </div>
-    </span>    
+    <span class="header">
+        <h1>Etch-A-Sketch</h1>
+    </span>
+    <div class="ui">
+        <span class="container-controls">
+            <div class="color-choice">
+                <input type="color" name="color-choice" id="color-choice" value="#0000FF">
+                <label for="color-choice">Pick a Color</label>
+            </div>
+            <button class="control-button button color-mode">Color Mode</button>
+            <button class="control-button button rainbow-mode">Rainbow Mode</button>
+            <button class="control-button button clear">Clear</button>
+            <div class="slider-div">
+                <input type="range" name="grid-size" id="grid-size-slider" min="1" max="64" value="16" step="1">
+                <label for="grid-size-slider" class="slider-label">Grid Size</label>
+            </div>
+        
+        </span>
+        <span class="container-one container">
+            <div class="container-div container game">
+        
+            </div>
+        </span>
+    </div>
 </body>
 </html>

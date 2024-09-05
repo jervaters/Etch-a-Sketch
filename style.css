@@ -1,23 +1,55 @@
 :root {
   --numberOfColumns: 8;
+  --primary-dark: #333;
+  --primary-light: #ededed;
+  --secondary-light: #fefefe;
 }
 
 html, body {
     height: 100%;
     width: 100%;
     max-width: 960px;
+    background-color: var(--primary-light);
+}
+
+h1 {
+    text-align: center;
 }
 
 .game {
     display: grid;
     grid-template-columns: repeat(var(--numberOfColumns), 1fr);
     text-align: center;
-    width: fit-content;
+    width: 300px;
+    height: 300px;
+    background-color: var(--secondary-light);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.game > div {
-    width: 30px;
-    height: 30px;
-    border: 1px solid blue;
-    background-color: pink;
-    
+
+.container-controls {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ui {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button:hover {
+    transform: scale(1.15);
+    transition-duration: 250ms;
+   
+}
+
+.color-choice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
